@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Новый заказ</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string> Оформление заказа для отправки</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QLabel" name="label_2">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>                                        Номер заказа</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QSpinBox" name="id">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QLabel" name="label_4">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>                                       Лекарство, вес</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QComboBox" name="med_weight">
+       <item>
+        <property name="text">
+         <string>Глицин-Форте 300</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Фитогипноз 215</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Цинарикс 400</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Железо-Плюс 150</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Живели-Флекс-Актив V80 100</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ревмафлекс 610</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Урисан 550</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Фемо-Клим 505</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Перфектил-Платинум 250</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Глицин-Форте 500</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Расторопши-экстракт 250</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Расторопши-экстракт 400</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="2">
+      <widget class="QLabel" name="label_3">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>                                       Имя склада</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="2">
+      <widget class="QComboBox" name="stock">
+       <item>
+        <property name="text">
+         <string>Москва</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Санк-Петербург</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Владивосток</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Екатеринбург</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="7" column="0" colspan="2">
+      <widget class="QLabel" name="label_5">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>                         Количество лекарств</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QSpinBox" name="med_count">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0" colspan="2">
+      <widget class="QLabel" name="label_6">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>                                Аптека</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0" colspan="2">
+      <widget class="QComboBox" name="pharmacy">
+       <item>
+        <property name="text">
+         <string>Аптеки Столицы Аптека № 5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Главная аптека</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Социальная аптека</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Монастырёв.рф</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Петербургские аптеки</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Аптека № 22</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Дешевая аптека</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Государственная аптека</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="11" column="0" colspan="2">
+      <widget class="QLabel" name="label_7">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>                                       Дата заказа</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0" colspan="2">
+      <widget class="QDateEdit" name="order_date">
+       <property name="maximumDateTime">
+        <datetime>
+         <hour>23</hour>
+         <minute>59</minute>
+         <second>59</second>
+         <year>2020</year>
+         <month>11</month>
+         <day>6</day>
+        </datetime>
+       </property>
+       <property name="date">
+        <date>
+         <year>2020</year>
+         <month>11</month>
+         <day>6</day>
+        </date>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0" colspan="2">
+      <widget class="QLabel" name="label_8">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>                                      Дата прибытия</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0" colspan="2">
+      <widget class="QDateEdit" name="departure_date">
+       <property name="minimumDateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2020</year>
+         <month>11</month>
+         <day>6</day>
+        </datetime>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QPushButton" name="cancel">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Отмена</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="QPushButton" name="accept">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Оформить заказ</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
